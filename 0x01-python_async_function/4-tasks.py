@@ -1,14 +1,12 @@
 #!/usr/bin/env python3
-""" Tasks """
 
 from typing import List
 import asyncio
 import random
 task_wait_random = __import__('3-tasks').task_wait_random
 
-
 async def task_wait_n(n: int, max_delay: int = 10) -> List[float]:
-    """ execute task_wait_random from 3-tasks.py file
+    """ executes task_wait_random from 3-tasks.py file
     n times with the specified max_delay
     Parameters
     ----------

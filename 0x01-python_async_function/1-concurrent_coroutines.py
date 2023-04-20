@@ -1,27 +1,28 @@
 #!/usr/bin/env python3
-""" execute multiple coroutines at the same time with async """
+""" 
+execute multiple coroutines at the same time with async 
+"""
 
 import asyncio
 import random
 from typing import List
 wait_random = __import__('0-basic_async_syntax').wait_random
 
-
 async def wait_n(n: int, max_delay: int = 10) -> List[float]:
-    """ execute wait_random from 0-basic_async_syntax.py file
+    """ executes wait_random from 0-basic_async_syntax.py file
     n times with the specified max_delay
 
     Parameters
-    ----------
+    --------
     n : int
       number of times to execute wait_random
     max_delay : int
         maximum delay
 
     Returns
-    -------
+    -----
     list
-        list of all the delays (float values) returned from wait_random
+        listing all the delays (float values) returned from wait_random
     """
     spawn_list = []
     delay_list = []
